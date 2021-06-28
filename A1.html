@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+      .table {
+        color: #ff1b6b;
+        border-color:#45caff;
+        border-style: solid;
+          width:450px;
+          padding: 10px;
+          margin: 3px;
+      }
+
+      h2{
+          text-align: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 5px;
+        text-align: center;
+      }
+      .list{
+          color:#ff1b6b;
+          border-color: #45caff;
+          border-style: solid;
+          width:470px;
+          margin: 3px;
+      }
+
+      .JavaScript{
+        color:#ff1b6b;
+        border-color:#45caff;
+        border-style: solid;
+        width: 470px;
+        margin: 3px;
+      }
+
+      .btn{
+        text-decoration: none;
+      }
+    </style>
+
+    <script>
+      function displayValue(){
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="table">
+      <h2>Table</h2>
+      <table>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="5">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th colspan="3" rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Begin</th>
+          <th>End</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2">8:00 AM</td>
+          <td rowspan="2">5:00 AM</td>
+          <td>Introduction HTML</td>
+        </tr>
+        <tr>
+          <td>Velidity:DTD and Relex NG</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td>8:00 AM</td>
+          <td>11:00 AM</td>
+          <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+          <td>11:00 AM</td>
+          <td>2:00 PM</td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td>5:00 PM</td>
+          <td>XSL Tranformation</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8:00 AM</td>
+          <td>5:00 PM</td>
+          <td>XSL Formating Option</td>
+        </tr>
+      </table>
+    </div>
+    <div class="list">
+      <h2>Lists</h2>
+      <h3>Unorder List</h3>
+      <ul style="list-style-type: square">
+        <li>Coffie</li>
+        <li>Milk</li>
+        <li>Tea --- A Nested List</li>
+        <ul>
+          <li>Black Tea</li>
+          <li>Green Tea</li>
+        </ul>
+      </ul>
+      <h3>Order List</h3>
+      <ol>
+        <li>Coffie</li>
+        <li>Milk</li>
+        <li>Tea</li>
+      </ol>
+      <h3>Description Lists</h3>
+      <dl>
+        <dt>Coffie</dt>
+        <dd>Black hot Coffie</dd>
+        <dt>Milk</dt>
+        <dd>White Cold Milk</dd>
+      </dl>
+    </div>
+    <div class="JavaScript">
+      <h3>JavaScript</h3>
+      <a href="#" class="btn" onclick="displayValue()">Click Here </a>
+      <p id="demo"></p>
+    </div>
+  </body>
+</html>
